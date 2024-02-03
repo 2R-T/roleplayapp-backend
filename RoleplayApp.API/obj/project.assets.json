@@ -88,6 +88,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "RoleplayApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "RoleplayApp.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RoleplayApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RoleplayApp.Domain.dll": {}
+        }
+      },
+      "RoleplayApp.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/RoleplayApp.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RoleplayApp.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -420,10 +443,22 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "RoleplayApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RoleplayApp.Domain/RoleplayApp.Domain.csproj",
+      "msbuildProject": "../RoleplayApp.Domain/RoleplayApp.Domain.csproj"
+    },
+    "RoleplayApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../RoleplayApp.Infrastructure/RoleplayApp.Infrastructure.csproj",
+      "msbuildProject": "../RoleplayApp.Infrastructure/RoleplayApp.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "RoleplayApp.Domain >= 1.0.0",
+      "RoleplayApp.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -453,7 +488,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Archivos de programa\\Proyectos\\FEBRERO\\RoleplayApp\\RoleplayApp.Domain\\RoleplayApp.Domain.csproj": {
+              "projectPath": "D:\\Archivos de programa\\Proyectos\\FEBRERO\\RoleplayApp\\RoleplayApp.Domain\\RoleplayApp.Domain.csproj"
+            },
+            "D:\\Archivos de programa\\Proyectos\\FEBRERO\\RoleplayApp\\RoleplayApp.Infrastructure\\RoleplayApp.Infrastructure.csproj": {
+              "projectPath": "D:\\Archivos de programa\\Proyectos\\FEBRERO\\RoleplayApp\\RoleplayApp.Infrastructure\\RoleplayApp.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
