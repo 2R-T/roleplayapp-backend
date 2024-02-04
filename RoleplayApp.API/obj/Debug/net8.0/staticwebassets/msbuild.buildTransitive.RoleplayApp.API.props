@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RoleplayApp.API.props" />
+</Project>

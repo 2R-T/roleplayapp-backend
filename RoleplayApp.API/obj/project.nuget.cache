@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mY6RcOknG2ZlmWNYGyIY3GtkRmHmrHwOtGWXJWjhP7oTOakowrZblEUe5B9J/ovCzgWghVCKVMKU8BRY7EuAow==",
+  "dgSpecHash": "FZZpIpmvf5285CLcKun2yLsCQP2g5XALHOwijBE7FWBEx4FkCZgSZgx/Cw8oyEempiKVLImzVBuUxHt8lwuUeA==",
   "success": true,
   "projectFilePath": "D:\\Archivos de programa\\Proyectos\\FEBRERO\\RoleplayApp\\RoleplayApp.API\\RoleplayApp.API.csproj",
   "expectedPackageFiles": [
@@ -101,7 +101,7 @@
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\8.0.0\\microsoft.visualstudio.web.codegenerators.mvc.8.0.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\mono.texttemplating\\2.3.1\\mono.texttemplating.2.3.1.nupkg.sha512",
-    "C:\\Users\\willi\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\mysqlconnector\\2.3.1\\mysqlconnector.2.3.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
@@ -112,7 +112,7 @@
     "C:\\Users\\willi\\.nuget\\packages\\nuget.projectmodel\\6.3.1\\nuget.projectmodel.6.3.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\nuget.protocol\\6.3.1\\nuget.protocol.6.3.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\nuget.versioning\\6.3.1\\nuget.versioning.6.3.1.nupkg.sha512",
-    "C:\\Users\\willi\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.0-beta.2\\pomelo.entityframeworkcore.mysql.8.0.0-beta.2.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

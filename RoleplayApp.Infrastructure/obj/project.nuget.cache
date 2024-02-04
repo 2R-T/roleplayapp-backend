@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WBHE1XbaFOulBuUmxQl3NC5hqaMe693Y5GzJXVPmbweMwPf3PZSrh7v3JKaK6MFYwGGkiRG2/sDMBGkdPaDahg==",
+  "dgSpecHash": "Ff7j+1M6pEGSnCTPEObEylp+/s+VC08ki7rffK0sLzgJrUky9QgetOngTLZlTQyf5VqCoVjQNPJ70NQ2zVQJtA==",
   "success": true,
   "projectFilePath": "D:\\Archivos de programa\\Proyectos\\FEBRERO\\RoleplayApp\\RoleplayApp.Infrastructure\\RoleplayApp.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -27,8 +27,8 @@
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
-    "C:\\Users\\willi\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
-    "C:\\Users\\willi\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\mysqlconnector\\2.3.1\\mysqlconnector.2.3.1.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.0-beta.2\\pomelo.entityframeworkcore.mysql.8.0.0-beta.2.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",
