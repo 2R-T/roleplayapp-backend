@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dqJoOGAuUvPXWumhoGJBhCOnsB27OeEvJk9C7aI/UQM=",
+  "Source": "RoleplayApp.API",
+  "BasePath": "_content/RoleplayApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

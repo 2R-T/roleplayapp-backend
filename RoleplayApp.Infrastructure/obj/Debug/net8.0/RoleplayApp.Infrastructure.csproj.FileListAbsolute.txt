@@ -1,0 +1,15 @@
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\bin\Debug\net8.0\RoleplayApp.Infrastructure.deps.json
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\bin\Debug\net8.0\RoleplayApp.Infrastructure.runtimeconfig.json
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\bin\Debug\net8.0\RoleplayApp.Infrastructure.dll
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\bin\Debug\net8.0\RoleplayApp.Infrastructure.pdb
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.csproj.AssemblyReference.cache
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.AssemblyInfoInputs.cache
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.AssemblyInfo.cs
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.sourcelink.json
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.dll
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\refint\RoleplayApp.Infrastructure.dll
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.pdb
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\RoleplayApp.Infrastructure.genruntimeconfig.cache
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Infrastructure\obj\Debug\net8.0\ref\RoleplayApp.Infrastructure.dll

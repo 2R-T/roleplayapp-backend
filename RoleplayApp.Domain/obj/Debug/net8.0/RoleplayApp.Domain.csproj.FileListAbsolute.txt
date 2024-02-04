@@ -1,0 +1,16 @@
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\bin\Debug\net8.0\RoleplayApp.Domain.deps.json
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\bin\Debug\net8.0\RoleplayApp.Domain.dll
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\bin\Debug\net8.0\RoleplayApp.Domain.pdb
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\bin\Debug\net8.0\RoleplayApp.Infrastructure.dll
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\bin\Debug\net8.0\RoleplayApp.Infrastructure.pdb
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.csproj.AssemblyReference.cache
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.AssemblyInfoInputs.cache
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.AssemblyInfo.cs
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.csproj.CoreCompileInputs.cache
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.sourcelink.json
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.csproj.CopyComplete
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.dll
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\refint\RoleplayApp.Domain.dll
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\RoleplayApp.Domain.pdb
+D:\Archivos de programa\Proyectos\FEBRERO\RoleplayApp\RoleplayApp.Domain\obj\Debug\net8.0\ref\RoleplayApp.Domain.dll
