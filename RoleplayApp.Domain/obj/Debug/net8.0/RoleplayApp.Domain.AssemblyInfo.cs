@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RoleplayApp.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94ed2a07724498781a75323645d1397683d02522")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aff8a4a0c3d981835e3979e0cdfedada0cc2771")]
 [assembly: System.Reflection.AssemblyProductAttribute("RoleplayApp.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RoleplayApp.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

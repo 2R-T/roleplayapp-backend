@@ -34,7 +34,7 @@ namespace RoleplayApp.Infrastructure.Services
 
         public async Task<User> GetByIdAsync(int id)
         {
-            var user = await _context.User.FirstOrDefaultAsync(u => u.Id == id);
+            var user = await _context.User.FindAsync(id);
             return user;
         }
 

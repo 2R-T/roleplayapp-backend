@@ -15,10 +15,9 @@ namespace RoleplayApp.Infrastructure.Models
         public required string Username { get; set; }
         public required DateOnly Birth_date { get; set; }
         public required DateOnly Created_at { get; set; }
-        public required string Biography_script { get; set; }
-        public required string profile_picture { get; set; }
-        public required DateTime Biography_updated_at { get; set; }
+        public required string Profile_picture { get; set; }
         public required User User { get; set; }
+        public required Biography Biography { get; set; }
         public ICollection<WallComments>? WallComments { get; set; }
         
 

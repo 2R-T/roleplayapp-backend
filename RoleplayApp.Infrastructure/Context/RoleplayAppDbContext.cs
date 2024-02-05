@@ -12,6 +12,7 @@ namespace RoleplayApp.Infrastructure.Context
         public DbSet<User> User { get; set; }
         public DbSet<Profile> Profile { get; set; }
         public DbSet<WallComments> WallComments { get; set; }
+        public DbSet<Biography> Biography { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -41,9 +42,8 @@ namespace RoleplayApp.Infrastructure.Context
             modelBuilder.Entity<Profile>().Property(p => p.Username).IsRequired().HasMaxLength(100);
             modelBuilder.Entity<Profile>().Property(p => p.Birth_date).IsRequired();
             modelBuilder.Entity<Profile>().Property(p => p.Created_at).IsRequired().HasDefaultValue(DateOnly.FromDateTime(DateTime.UtcNow));
-            modelBuilder.Entity<Profile>().Property(p => p.Biography_script).IsRequired();
-            modelBuilder.Entity<Profile>().Property(p => p.profile_picture).IsRequired();
-            modelBuilder.Entity<Profile>().Property(p => p.Biography_updated_at).IsRequired().HasDefaultValue(DateTime.UtcNow);
+            modelBuilder.Entity<Profile>().Property(p => p.Profile_picture).IsRequired();
+            modelBuilder.Entity<Profile>().HasOne(p => p.Biography).WithOne(b => b.Profile).HasForeignKey<Biography>(b => b.Id);
 
             modelBuilder.Entity<WallComments>().ToTable("wall_comments");
             modelBuilder.Entity<WallComments>().HasKey(wc => wc.Id);
@@ -53,7 +53,11 @@ namespace RoleplayApp.Infrastructure.Context
             modelBuilder.Entity<WallComments>().HasOne(wc => wc.User).WithMany(u => u.WallComments).HasForeignKey(wc => wc.User_id);
             modelBuilder.Entity<WallComments>().HasOne(wc => wc.Profile).WithMany(p => p.WallComments).HasForeignKey(wc => wc.Profile_id);
 
-
+            modelBuilder.Entity<Biography>().ToTable("biography");
+            modelBuilder.Entity<Biography>().HasKey(b => b.Id);
+            modelBuilder.Entity<Biography>().Property(b => b.Id).IsRequired().ValueGeneratedOnAdd();
+            modelBuilder.Entity<Biography>().Property(b => b.Biography_script).IsRequired();
+            modelBuilder.Entity<Biography>().Property(b => b.Biography_updated_at).IsRequired();
 
 
 
