@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RoleplayApp.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94ed2a07724498781a75323645d1397683d02522")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93d1dcb7c755a20c1c8ee46e8c41a92a8c9da4b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("RoleplayApp.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RoleplayApp.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

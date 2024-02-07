@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.EntityFrameworkCore.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,11 @@ namespace RoleplayApp.Infrastructure.Models
         public required DateOnly Birth_date { get; set; }
         public required DateOnly Created_at { get; set; }
         public required string Profile_picture { get; set; }
-        public required User User { get; set; }
+
+        //Relationships
+        public required int User_id { get; set; }
         public required Biography Biography { get; set; }
         public ICollection<WallComments>? WallComments { get; set; }
-        
-
+      
     }
 }

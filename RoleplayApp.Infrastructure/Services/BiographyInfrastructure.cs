@@ -1,4 +1,5 @@
-﻿using RoleplayApp.Infrastructure.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using RoleplayApp.Infrastructure.Context;
 using RoleplayApp.Infrastructure.Interfaces;
 using RoleplayApp.Infrastructure.Models;
 using System;
@@ -27,6 +28,12 @@ namespace RoleplayApp.Infrastructure.Services
                 return true;
             }
             return false;
+        }
+
+        public async Task<List<Biography>> GetAllAsync()
+        {
+            var biography = await _context.Biography.ToListAsync();
+            return biography;
         }
 
         public async Task<Biography> GetByIdAsync(int id)

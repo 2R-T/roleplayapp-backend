@@ -13,5 +13,6 @@ namespace RoleplayApp.Infrastructure.Interfaces
         public Task<bool> SaveAsync(Biography biography);
         public Task<bool> UpdateAsync(int id, Biography biography);
         public Task<bool> DeleteAsync(int id);
+        Task<List<Biography>> GetAllAsync();
     }
 }

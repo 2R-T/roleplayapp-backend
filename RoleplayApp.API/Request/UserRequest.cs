@@ -10,5 +10,6 @@ namespace RoleplayApp.API.Request
         [Required]
         [MinLength(5)]
         public string Password { get; set; }
+        public ProfileRequest Profile { get; set; }
     }
 }

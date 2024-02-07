@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using RoleplayApp.Infrastructure.Models;
 using System.Reflection.Metadata;
 
@@ -31,10 +32,10 @@ namespace RoleplayApp.Infrastructure.Context
             modelBuilder.Entity<User>().Property(u => u.Email).IsRequired().HasMaxLength(100);
             modelBuilder.Entity<User>().Property(u => u.Password).IsRequired().HasMaxLength(100);
             modelBuilder.Entity<User>().Property(u => u.Phone_number);
-            modelBuilder.Entity<User>().Property(u => u.Country_code);  
-            modelBuilder.Entity<User>().HasOne(u => u.Profile).WithOne(p => p.User).HasForeignKey<Profile>(p => p.Id);
-            
-            modelBuilder.Entity<Profile>().ToTable("profile"); 
+            modelBuilder.Entity<User>().Property(u => u.Country_code);
+            modelBuilder.Entity<User>().HasOne(u => u.Profile).WithOne().HasForeignKey<Profile>(p => p.User_id).IsRequired();
+
+            modelBuilder.Entity<Profile>().ToTable("profile");
             modelBuilder.Entity<Profile>().HasKey(p => p.Id);
             modelBuilder.Entity<Profile>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
             modelBuilder.Entity<Profile>().Property(p => p.First_name).IsRequired().HasMaxLength(100);
@@ -43,15 +44,15 @@ namespace RoleplayApp.Infrastructure.Context
             modelBuilder.Entity<Profile>().Property(p => p.Birth_date).IsRequired();
             modelBuilder.Entity<Profile>().Property(p => p.Created_at).IsRequired().HasDefaultValue(DateOnly.FromDateTime(DateTime.UtcNow));
             modelBuilder.Entity<Profile>().Property(p => p.Profile_picture).IsRequired();
-            modelBuilder.Entity<Profile>().HasOne(p => p.Biography).WithOne(b => b.Profile).HasForeignKey<Biography>(b => b.Id);
+            modelBuilder.Entity<Profile>().HasOne(p => p.Biography).WithOne().HasForeignKey<Biography>(b => b.Profile_id).IsRequired();
+            modelBuilder.Entity<Profile>().HasMany(p => p.WallComments).WithOne().HasForeignKey(wc => wc.Sender_id).IsRequired();
+            modelBuilder.Entity<Profile>().HasMany(p => p.WallComments).WithOne().HasForeignKey(wc => wc.Receiver_id).IsRequired();
 
             modelBuilder.Entity<WallComments>().ToTable("wall_comments");
             modelBuilder.Entity<WallComments>().HasKey(wc => wc.Id);
             modelBuilder.Entity<WallComments>().Property(wc => wc.Id).IsRequired().ValueGeneratedOnAdd();
             modelBuilder.Entity<WallComments>().Property(wc => wc.Comment).IsRequired();
             modelBuilder.Entity<WallComments>().Property(wc => wc.Created_at).IsRequired().HasDefaultValue(DateTime.UtcNow);
-            modelBuilder.Entity<WallComments>().HasOne(wc => wc.User).WithMany(u => u.WallComments).HasForeignKey(wc => wc.User_id);
-            modelBuilder.Entity<WallComments>().HasOne(wc => wc.Profile).WithMany(p => p.WallComments).HasForeignKey(wc => wc.Profile_id);
 
             modelBuilder.Entity<Biography>().ToTable("biography");
             modelBuilder.Entity<Biography>().HasKey(b => b.Id);
@@ -60,6 +61,6 @@ namespace RoleplayApp.Infrastructure.Context
             modelBuilder.Entity<Biography>().Property(b => b.Biography_updated_at).IsRequired();
 
 
-
+        }
     }
 }

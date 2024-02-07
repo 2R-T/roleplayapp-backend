@@ -38,7 +38,7 @@ namespace RoleplayApp.Infrastructure.Services
 
         public async Task<List<WallComments>> GetAllCommentsByProfileIdAsync(int profileId)
         {
-            var wallComments = await _context.WallComments.Where(w => w.Profile_id == profileId).ToListAsync();
+            var wallComments = await _context.WallComments.Where(w => w.Receiver_id == profileId).ToListAsync();
             return wallComments;
         }
 
