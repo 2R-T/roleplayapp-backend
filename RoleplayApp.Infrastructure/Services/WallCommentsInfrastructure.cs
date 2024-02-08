@@ -35,16 +35,22 @@ namespace RoleplayApp.Infrastructure.Services
             var wallComments = await _context.WallComments.ToListAsync();
             return wallComments;
         }
-
-        public async Task<List<WallComments>> GetAllCommentsByProfileIdAsync(int profileId)
-        {
-            var wallComments = await _context.WallComments.Where(w => w.Receiver_id == profileId).ToListAsync();
-            return wallComments;
-        }
-
         public async Task<WallComments> GetByIdAsync(int id)
         {
             var wallComments = await _context.WallComments.FindAsync(id);
+            return wallComments;
+        }
+
+        public async Task<List<WallComments>> GetByReceiverId(int receiverId)
+        {
+            var wallComments = await _context.WallComments.Where(w => w.Receiver_id == receiverId).ToListAsync();
+            return wallComments;
+
+        }
+
+        public async Task<List<WallComments>> GetBySenderId(int senderId)
+        {
+            var wallComments = await _context.WallComments.Where(w => w.Sender_id == senderId).ToListAsync();
             return wallComments;
         }
 

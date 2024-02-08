@@ -21,7 +21,8 @@ namespace RoleplayApp.Infrastructure.Models
         //Relationships
         public required int User_id { get; set; }
         public required Biography Biography { get; set; }
-        public ICollection<WallComments>? WallComments { get; set; }
+        public ICollection<WallComments>? WallCommentsSenders { get; set; }
+        public ICollection<WallComments>? WallCommentsReceivers { get; set; }
       
     }
 }

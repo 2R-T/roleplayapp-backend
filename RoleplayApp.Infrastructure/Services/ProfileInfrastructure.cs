@@ -29,6 +29,10 @@ namespace RoleplayApp.Infrastructure.Services
         public async Task<List<Profile>> GetAllAsync()
         {
             var profiles = await _context.Profile.ToListAsync();
+            foreach (var profile in profiles)
+            {
+                profile.Biography = await _context.Biography.Where(b => b.Profile_id == profile.Id).FirstOrDefaultAsync();
+            }
             return profiles;
 
         }
@@ -36,6 +40,11 @@ namespace RoleplayApp.Infrastructure.Services
         public async Task<List<Profile>> GetByUsernameAsync(string username)
         {
             var profiles = await _context.Profile.Where(p => p.Username == username).ToListAsync();
+            foreach (var profile in profiles)
+            {
+                profile.Biography = await _context.Biography.Where(b => b.Profile_id == profile.Id).FirstOrDefaultAsync();
+            }
+
             return profiles;
         }
 

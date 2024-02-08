@@ -45,8 +45,8 @@ namespace RoleplayApp.Infrastructure.Context
             modelBuilder.Entity<Profile>().Property(p => p.Created_at).IsRequired().HasDefaultValue(DateOnly.FromDateTime(DateTime.UtcNow));
             modelBuilder.Entity<Profile>().Property(p => p.Profile_picture).IsRequired();
             modelBuilder.Entity<Profile>().HasOne(p => p.Biography).WithOne().HasForeignKey<Biography>(b => b.Profile_id).IsRequired();
-            modelBuilder.Entity<Profile>().HasMany(p => p.WallComments).WithOne().HasForeignKey(wc => wc.Sender_id).IsRequired();
-            modelBuilder.Entity<Profile>().HasMany(p => p.WallComments).WithOne().HasForeignKey(wc => wc.Receiver_id).IsRequired();
+            modelBuilder.Entity<Profile>().HasMany(p => p.WallCommentsSenders).WithOne().HasForeignKey(wc => wc.Sender_id).IsRequired();
+            modelBuilder.Entity<Profile>().HasMany(p => p.WallCommentsReceivers).WithOne().HasForeignKey(wc => wc.Receiver_id).IsRequired();
 
             modelBuilder.Entity<WallComments>().ToTable("wall_comments");
             modelBuilder.Entity<WallComments>().HasKey(wc => wc.Id);

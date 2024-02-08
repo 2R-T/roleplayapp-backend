@@ -11,7 +11,8 @@ namespace RoleplayApp.Infrastructure.Interfaces
     {
         public Task<List<WallComments>> GetAllAsync();
         public Task<WallComments> GetByIdAsync(int id);
-        public Task<List<WallComments>> GetAllCommentsByProfileIdAsync(int profileId);
+        public Task<List<WallComments>> GetBySenderId(int senderId);
+        public Task<List<WallComments>> GetByReceiverId(int receiverId);
         public Task<bool> SaveAsync(WallComments wallComments);
         public Task<bool> DeleteAsync(int id);
     }
