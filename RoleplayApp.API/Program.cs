@@ -19,6 +19,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUserInfrastructure, UserInfrastructure>();
 builder.Services.AddScoped<IUserDomain, UserDomain>();
+builder.Services.AddScoped<IProfileInfrastructure, ProfileInfrastructure>();
+builder.Services.AddScoped<IProfileDomain, ProfileDomain>();
+builder.Services.AddScoped<IBiographyInfrastructure, BiographyInfrastructure>();
+builder.Services.AddScoped<IBiographyDomain, BiographyDomain>();
+builder.Services.AddScoped<IWallCommentsInfrastructure, WallCommentsInfrastructure>();
+builder.Services.AddScoped<IWallCommentsDomain, WallCommentsDomain>();
+
 
 //cors
 builder.Services.AddCors(p =>

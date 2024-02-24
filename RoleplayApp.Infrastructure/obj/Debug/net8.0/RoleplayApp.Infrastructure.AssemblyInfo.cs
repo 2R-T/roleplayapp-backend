@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RoleplayApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94ed2a07724498781a75323645d1397683d02522")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3032e13cf4cd1ceab2a08dce190cf552b2883b3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("RoleplayApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RoleplayApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

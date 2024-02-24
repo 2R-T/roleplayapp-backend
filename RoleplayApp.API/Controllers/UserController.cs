@@ -36,7 +36,7 @@ namespace RoleplayApp.API.Controllers
 
         }
         // GET: api/User/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public async Task<UserResponse> GetByIdAsync(int id)
         {
             var user = await _userInfrastructure.GetByIdAsync(id);
@@ -57,6 +57,7 @@ namespace RoleplayApp.API.Controllers
                 StatusCode(400);
             }
         }
+        // PUT 
         [HttpPut("{id}")]
         public async Task PutAsync(int id, [FromBody] UserRequest request)
         {

@@ -29,12 +29,19 @@ namespace RoleplayApp.Infrastructure.Services
         public async Task<List<User>> GetAllAsync()
         {
             var users = await _context.User.ToListAsync();
+            foreach (var user in users)
+            {
+                user.Profile = await _context.Profile.Where(p => p.User_id == user.Id).FirstOrDefaultAsync();
+                user.Profile.Biography = await _context.Biography.Where(b => b.Profile_id == user.Profile.Id).FirstOrDefaultAsync();
+            }
             return users;
         }
 
         public async Task<User> GetByIdAsync(int id)
         {
-            var user = await _context.User.FirstOrDefaultAsync(u => u.Id == id);
+            var user = await _context.User.FindAsync(id);
+            user.Profile = await _context.Profile.Where(p => p.User_id == user.Id).FirstOrDefaultAsync();
+            user.Profile.Biography = await _context.Biography.Where(b => b.Profile_id == user.Profile.Id).FirstOrDefaultAsync();
             return user;
         }
 
